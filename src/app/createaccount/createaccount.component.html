@@ -1,0 +1,39 @@
+<div class ="container-fluid">
+    <h2 class = "heading">CreateAcount {{accountNumber}} </h2>
+
+    <div class = "form-group">
+        <label for="">Name</label>
+        <input type="text" name="name"  class="from-control" [(ngModel)]="account.name">
+        
+    </div>
+
+    <div class = "form-group">
+        <label for="">pan</label>
+        <input type="text" name="pan" class = "from-control" [(ngModel)]="account.pan">
+        
+    </div>
+
+    <div class = "form-group" >
+        <label for="">mobile Number</label>
+        <input type="text" name="mobileNumber" class = "from-control" [(ngModel)]="account.mobileNumber">
+       
+    </div>
+
+
+    <div class = "form-group">
+        <label for="">Accountbalance</label>
+        <input type="text" name="balance" class = "from-control"[(ngModel)]="account.balance">
+        
+    </div>
+
+    <div class = "form-group">
+        <label for="">AccountNumber</label>
+        <input type="text" name="AccountNumber" class = "from-control"[(ngModel)]="account.accountNumber">
+        
+    </div>
+
+   <app-address #custaddress > </app-address>
+    
+<button type="submit" class="btn btn-primary" (click)="createAccount(custaddress)">CreateAcount </button> 
+
+</div>

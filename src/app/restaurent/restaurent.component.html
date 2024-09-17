@@ -1,0 +1,11 @@
+<div class ="container- fluid">
+    <div class="from-group">
+        <label for="restaurent"> Restaurent name</label>
+    <input type="text" id="restaurent" name="restaurentName"
+    class="from-control"
+    [(ngModel)]="address.add1">
+    </div>
+    {{restaurent.name}}
+    <button type="submit" class="btn btn-primary"
+    (click)="addRestaurent()"button>AddRestaurent</button>
+</div>
